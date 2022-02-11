@@ -1,0 +1,47 @@
+{
+  "name": "@mineot/secure_key",
+  "version": "0.0.1",
+  "description": "Secure key, encode and decode",
+  "homepage": "https://github.com/mineot/secure_key#readme",
+  "license": "MIT",
+  "main": "dist/secure_key.js",
+  "module": "src/index.js",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "Fabiano Pires",
+    "email": "mineot@gmail.com",
+    "url": "https://www.mineot.com/"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "webpack --mode production"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mineot/secure_key.git"
+  },
+  "keywords": [
+    "secure",
+    "key",
+    "encode",
+    "decode"
+  ],
+  "bugs": {
+    "url": "https://github.com/mineot/secure_key/issues"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.5.1",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
