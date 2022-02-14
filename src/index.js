@@ -1,5 +1,5 @@
-import key from "@/components/key";
-import encoder from "@/components/encoder";
-import decoder from "@/components/decoder";
+import Key from "@/components/key";
+import Encoder from "@/components/encoder";
+import Decoder from "@/components/decoder";
 
-export { key, encoder, decoder };
+export { Key, Encoder, Decoder };

@@ -16,12 +16,19 @@
     "url": "https://www.mineot.com/"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --silent false",
     "build": "webpack --mode production"
   },
   "jest": {
+    "testEnvironment": "jsdom",
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "@/(.*)$": "<rootDir>/src/$1"
+    },
+    "globals": {
+      "window": {}
     }
   },
   "repository": {
@@ -38,7 +45,9 @@
     "url": "https://github.com/mineot/secure_key/issues"
   },
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
+    "@jest/test-result": "^27.5.1",
     "babel-jest": "^27.5.1",
     "jest": "^27.5.1",
     "webpack": "^5.68.0",
