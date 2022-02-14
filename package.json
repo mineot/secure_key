@@ -43,5 +43,9 @@
     "jest": "^27.5.1",
     "webpack": "^5.68.0",
     "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "lzutf8": "^0.6.0"
   }
 }
