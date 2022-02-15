@@ -1,4 +1,4 @@
-import crypto from "crypto-js";
+const crypto = require("crypto-js");
 
 export default async function (data, { key, iv }) {
   return crypto.AES.decrypt(data, key, { iv }).toString(crypto.enc.Utf8);
