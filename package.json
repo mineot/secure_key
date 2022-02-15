@@ -1,6 +1,6 @@
 {
   "name": "@mineot/secure_key",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Secure key, encode and decode",
   "homepage": "https://github.com/mineot/secure_key#readme",
   "license": "MIT",
